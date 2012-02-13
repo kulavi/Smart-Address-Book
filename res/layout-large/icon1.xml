@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/widget44"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<TableLayout
+  			xmlns:android="http://schemas.android.com/apk/res/android"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content">
+  <TableRow>
+   <TextView
+android:id="@+id/icon_text"
+android:layout_width="110px"
+android:textSize="15px"
+android:layout_height="wrap_content"
+android:textColor="#000000">
+</TextView>
+</TableRow>
+<TableRow>
+     <TextView
+android:id="@+id/icon_text1"
+android:layout_width="110px"
+android:layout_height="wrap_content"
+android:textColor="#000000">
+</TextView>
+</TableRow>
+
+</TableLayout>
+</LinearLayout>

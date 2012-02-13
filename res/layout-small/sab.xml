@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:layout_height="fill_parent" 
+    android:layout_width="fill_parent">
+
+ <LinearLayout android:id="@+id/LinearLayout01"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ android:background="@drawable/background"
+  android:gravity="center_horizontal"
+  android:orientation="vertical"
+ xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+ <LinearLayout android:id="@+id/LinearLayout01"
+ android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:paddingTop="55px"
+  			android:paddingLeft="12px">
+ <TableLayout
+  			xmlns:android="http://schemas.android.com/apk/res/android"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content">
+  			
+  	<TableRow>
+  	 	<EditText
+  	   	android:layout_width="180px"
+ 	android:layout_height="40px"
+ 	android:id="@+id/esearch"
+ 	android:textColor="#306EFF"/>
+ 	<Button
+ 	android:layout_width="25px"
+ 	android:layout_height="30px"
+ 	android:id="@+id/search"
+ 	android:background="@drawable/search"/>
+ </TableRow>
+ </TableLayout>
+ </LinearLayout>
+ <LinearLayout android:id="@+id/LinearLayout01"
+ android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:paddingTop="15px"
+  			android:paddingLeft="12px">
+ <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    				android:layout_width="wrap_content"
+    				android:layout_height="fill_parent">
+    				
+<TableRow>
+<Button
+android:id="@+id/add"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:background="@drawable/contactbutton"/>
+<Button
+android:id="@+id/call"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:background="@drawable/calllistbutton"
+android:layout_marginLeft="20px"/>
+</TableRow>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"/>
+<TableRow>
+<Button
+android:id="@+id/task"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:background="@drawable/taskbutton"/>
+<Button
+android:id="@+id/sync"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:background="@drawable/syncbutton"
+android:layout_marginLeft="20px"/>
+</TableRow>
+</TableLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    </LinearLayout>
+    
+</RelativeLayout>

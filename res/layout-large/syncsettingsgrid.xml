@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/rl1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#000000">
+   <TableLayout
+  			xmlns:android="http://schemas.android.com/apk/res/android"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content">
+  			<TableRow>
+  			<TextView
+  			android:paddingLeft="15px"
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:text="Select All"
+  			android:textColor="#000000"/>
+			<CheckBox
+				android:layout_marginLeft="185px"
+				android:id="@+id/chk_all" 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"/>
+		
+		</TableRow>
+		</TableLayout>
+	
+   <GridView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/GridView01"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+    android:padding="0dp"
+    android:verticalSpacing="0dp"
+    android:horizontalSpacing="10dp"
+    android:numColumns="1"
+    android:columnWidth="100dp"
+    android:stretchMode="columnWidth"
+    android:gravity="center">
+</GridView>
+</LinearLayout>
+ <Button android:layout_width="fill_parent" 
+ android:id="@+id/ok" 
+ android:paddingTop="5dp" 
+ android:layout_height="wrap_content" 
+ android:text="OK" 
+ android:layout_alignParentBottom="true">
+ </Button>
+ </RelativeLayout>
+ </merge>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- row.xml -->
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/widget44"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<TableLayout
+  			xmlns:android="http://schemas.android.com/apk/res/android"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content">
+  <TableRow>
+ 
+      <ImageView
+    	android:id="@+id/con_image"
+		android:layout_width="40px"
+		android:layout_height="60px">
+	 </ImageView>
+	  <TextView
+      android:layout_width="15px"
+      android:layout_height="wrap_content"/>
+<TextView
+android:id="@+id/icon_text"
+android:paddingTop="15dp"
+android:layout_width="150px"
+android:textSize="15px"
+android:layout_height="wrap_content"
+android:textColor="#000000">
+</TextView>             
+      <ImageView
+    	android:id="@+id/icon_image"
+    	android:paddingTop="15dp"
+    	android:layout_gravity="right"
+    	android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+	 </ImageView>
+	 <TextView
+      android:layout_width="55px"
+      android:layout_height="wrap_content"/>
+	  <ImageView
+    	android:id="@+id/check"
+    	android:paddingTop="15dp"
+    	android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+	 </ImageView>
+	</TableRow>
+<TableRow>
+</TableRow>
+</TableLayout>
+<ImageView
+    	android:id="@+id/line"
+    	android:src="@drawable/line"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+</RelativeLayout>

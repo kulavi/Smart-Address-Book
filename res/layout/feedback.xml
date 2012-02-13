@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:layout_height="fill_parent" 
+    android:layout_width="wrap_content">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01" 
+        android:layout_width="fill_parent" 
+        android:background="#FFFFFF"
+        android:layout_above="@id/footer"
+        android:layout_height="wrap_content">
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+      <TableLayout
+  			xmlns:android="http://schemas.android.com/apk/res/android"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:paddingLeft="7px"
+  			android:paddingTop="10px">
+  			
+  	<TableRow>
+  
+            <TextView android:id="@+id/tags" 
+                android:text="Tags" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:textColor="#000000">
+                </TextView>
+                <TextView
+android:layout_width="30px"
+android:layout_height="wrap_content"/> 
+                <RatingBar 
+            android:id="@+id/rating_tag"
+            android:isIndicator="false"
+		android:stepSize="1.0"
+		android:numStars="5"
+		android:rating="0.0"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		    style="@style/sab_rating_bar_small">
+		    </RatingBar>
+		     </TableRow>
+                 <TextView
+android:layout_width="wrap_content"
+android:layout_height="30px"/> 
+                <TableRow>
+            <TextView android:id="@+id/calllist" 
+                android:text="Call List" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:textColor="#000000">
+                </TextView>
+                 <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"/> 
+                 <RatingBar 
+            android:id="@+id/rating_call"
+            android:isIndicator="false"
+		android:stepSize="1.0"
+		android:numStars="5"
+		android:rating="0.0"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		    style="@style/sab_rating_bar_small">
+		    </RatingBar>
+                </TableRow>
+                   <TextView
+android:layout_width="wrap_content"
+android:layout_height="30px"/> 
+                <TableRow>
+                <TextView android:id="@+id/tasks" 
+                android:text="Tasks" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:textColor="#000000">
+                </TextView>
+                 <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"/> 
+                 <RatingBar 
+            android:id="@+id/rating_tasks"
+            android:isIndicator="false"
+		android:stepSize="1.0"
+		android:numStars="5"
+		android:rating="0.0"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		    style="@style/sab_rating_bar_small">
+		    </RatingBar>
+                </TableRow>
+                   <TextView
+android:layout_width="wrap_content"
+android:layout_height="30px"/> 
+                <TableRow>
+                <TextView android:id="@+id/sync" 
+                android:text="Sync" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:textColor="#000000">
+                               </TextView>
+                                <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"/> 
+                                <RatingBar 
+            android:id="@+id/rating_sync"
+            android:isIndicator="false"
+		android:stepSize="1.0"
+		android:numStars="5"
+		android:rating="0.0"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		    style="@style/sab_rating_bar_small">
+		    </RatingBar>
+        </TableRow>
+        <TableRow>
+        <TextView android:id="@+id/ratingText" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:textColor="#000000"
+	android:textSize="18px"/>
+	</TableRow>
+        </TableLayout>
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TableRow>
+     <TextView 
+                android:text="Comment" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:textColor="#000000"/>
+    </TableRow>
+        <TableRow>
+       <EditText  
+       android:id="@+id/unotes"
+        android:inputType="textMultiLine"
+    android:lines="8" 
+    android:minLines="6" 
+    android:gravity="top|left" 
+    android:maxLines="10" 
+    android:layout_height="300px" 
+    android:scrollbars="vertical" 
+       android:layout_marginLeft="13px"
+       android:layout_marginRight="10px"
+      android:layout_width="260px" />
+       </TableRow>
+       </TableLayout>
+         <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textColor="#000000"
+android:id="@+id/txt1"/> 
+</LinearLayout>
+</ScrollView>
+<LinearLayout android:id="@+id/footer"
+ android:layout_width="wrap_content"
+    android:layout_height="55px" 
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true" 
+    android:gravity="center_vertical|center_horizontal"
+    
+    style="@android:style/ButtonBar">
+
+    <Button  android:id="@+id/send"  
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Send" />
+       <TextView
+android:layout_width="20px"
+android:layout_height="wrap_content"
+/> 
+<Button android:id="@+id/cancel" 
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Cancel" />
+        </LinearLayout>
+   </RelativeLayout>

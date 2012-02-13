@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:layout_height="wrap_content" 
+     
+    android:layout_width="fill_parent">
+
+<LinearLayout android:id="@+id/LinearLayout01"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ android:orientation="vertical"
+ android:background="@drawable/homescreen"
+ xmlns:android="http://schemas.android.com/apk/res/android">
+	
+    <TextView   
+    		 android:id="@+id/TextView01" 
+ 			 android:layout_width="20px"
+ 		     android:layout_height="60px"			     
+ 		     android:textColor="#000000">
+ 	</TextView>
+	<TableLayout
+  			xmlns:android="http://schemas.android.com/apk/res/android"
+  			android:layout_width="fill_parent"
+  			android:layout_height="fill_parent">
+  	<TableRow>
+  	 <TextView   
+    		  android:textSize="15px"
+ 			 android:layout_width="150px"
+ 		     android:layout_height="wrap_content" 
+ 		   	android:textColor="#000000"
+ 		   	 android:paddingLeft="35px"
+ 		       android:text="To Do" />
+ 	
+ 	
+ 		     
+ 	 <TextView  
+ 	 			 android:textSize="15px" 
+    		 android:id="@+id/tname" 
+ 			 android:layout_width="180px"
+ 		     android:layout_height="wrap_content" 
+ 		   	android:textColor="#000000"
+ 		   	 android:padding="3dip"/>
+	
+ 	</TableRow>
+ 	<TableRow>
+ 	<TextView   
+    		  
+ 			 android:layout_width="150px"
+ 		     android:layout_height="wrap_content" 
+ 		   	android:textColor="#000000"
+ 		   	 android:paddingLeft="35px"
+ 		   	  android:textSize="15px"
+ 		       android:text="Task Description" />
+ 	
+ 	<TextView   
+    		 android:id="@+id/tdesp" 
+    		  android:textSize="15px" 
+ 			 android:layout_width="150px"
+ 		     android:layout_height="wrap_content" 
+ 		   	android:textColor="#000000"/>
+		     </TableRow>
+ 
+  
+  
+  	<TableRow>
+  	<TextView   
+    		  
+ 			 android:layout_width="150px"
+ 			  android:textSize="15px"
+ 		     android:layout_height="wrap_content" 
+ 		   	android:textColor="#000000"
+ 		   	 android:paddingLeft="35px"
+ 		   	
+		  	android:text="Priority">
+ 	</TextView>
+ 	<TextView   
+    		 android:id="@+id/tpriority" 
+ 			 android:layout_width="150px"
+ 			  android:textSize="15px"
+ 		     android:layout_height="wrap_content" 
+ 		   	android:textColor="#000000"
+ 		   	 android:padding="3dip">
+ 	</TextView>
+ 	</TableRow>
+ 	<TableRow>
+  	<TextView   
+    		  
+ 			 android:layout_width="150px"
+ 			  android:textSize="15px"
+ 		     android:layout_height="wrap_content" 
+ 		   	android:textColor="#000000"
+ 		   	 android:paddingLeft="35px"
+ 		   	
+		  	android:text="Task Location">
+ 	</TextView>
+ 	<TextView   
+    		 android:id="@+id/tloc" 
+ 			 android:layout_width="150px"
+ 			  android:textSize="15px"
+ 		     android:layout_height="wrap_content" 
+ 		   	android:textColor="#000000"
+ 		   	 android:padding="3dip">
+ 	</TextView>
+ 	</TableRow>
+ 	<TableRow>
+  	  
+    			<TextView   
+    		   android:textSize="15px"
+ 			android:layout_width="180px"
+ 		     android:layout_height="wrap_content" 
+ 		   	android:textColor="#000000"
+ 		   	 android:paddingLeft="35px"
+		  	android:text="Time">
+ 	</TextView>
+ 	<TextView    android:textSize="15px"
+    		 android:id="@+id/time" 
+    		 android:text="time"
+ 			 android:layout_width="150px"
+ 			  android:padding="3dip"
+ 		     android:layout_height="wrap_content" 
+ 		   	android:textColor="#000000">
+ 		   	
+ 	</TextView>
+ 	</TableRow>
+  	<TableRow>
+  	<TextView   
+    		   android:textSize="15px"
+ 			android:layout_width="180px"
+ 		     android:layout_height="wrap_content" 
+ 		   	android:textColor="#000000"
+ 		    android:paddingLeft="35px"
+		  	android:text="Due">
+ 	</TextView>
+ 	<TextView 
+ 	 		android:textSize="15px"  
+    		 android:id="@+id/due" 
+ 			 android:layout_width="150px"
+ 			 android:padding="3dip"
+ 		     android:layout_height="wrap_content" 
+ 		     android:text="abc"
+ 		   	 android:textColor="#000000">
+ 	</TextView>
+ 	</TableRow>
+ 
+  </TableLayout>
+</LinearLayout>
+ 
+  	<LinearLayout android:id="@+id/footer"
+ android:layout_width="wrap_content"
+    android:layout_height="55px" 
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true" 
+     android:gravity="center_vertical|center_horizontal"
+    style="@android:style/ButtonBar">
+
+ <Button android:id="@+id/cancel" 
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Cancel" />
+         <TextView
+android:layout_width="12px"           
+android:layout_height="wrap_content"
+/> 
+        <Button  android:id="@+id/ddelete"  
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Delete" />
+         <TextView
+android:layout_width="12px"           
+android:layout_height="wrap_content"
+/> 
+        <Button  android:id="@+id/dedit"  
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Edit" />
+        </LinearLayout>
+       
+      
+   </RelativeLayout>
+  
+  

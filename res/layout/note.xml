@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:layout_height="fill_parent" 
+    android:layout_width="wrap_content">
+      <LinearLayout 
+      xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/homescreen">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+        <TableRow>
+       <EditText  
+       android:id="@+id/unotes"
+        android:inputType="textMultiLine"
+    android:lines="8" 
+    android:minLines="6" 
+    android:gravity="top|left" 
+    android:maxLines="10" 
+    android:layout_height="300px" 
+    android:scrollbars="vertical" 
+       android:layout_marginLeft="13px"
+       android:layout_marginRight="10px"
+      android:layout_width="260px" />
+       </TableRow>
+       </TableLayout>
+        </LinearLayout>
+       <LinearLayout android:id="@+id/footer"
+ android:layout_width="wrap_content"
+    android:layout_height="55px" 
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true" 
+    style="@android:style/ButtonBar">
+
+    <Button  android:id="@+id/bok"  
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Done" />
+       <TextView
+android:layout_width="20px"
+android:layout_height="wrap_content"
+/> 
+<Button android:id="@+id/bcancel" 
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Cancel" />
+        </LinearLayout>
+   </RelativeLayout>
+       

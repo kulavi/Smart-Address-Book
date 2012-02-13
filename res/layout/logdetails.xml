@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout 
+    android:id="@+id/rl1" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TableLayout
+  			xmlns:android="http://schemas.android.com/apk/res/android"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content">
+  <TableRow>
+    
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:layout_marginLeft="4px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="4px"
+        android:src="@drawable/propic" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+</TableRow>
+ <TableRow>
+    
+    <Button
+        android:id="@+id/call"
+        android:text="Call"
+        android:layout_width="0px"
+        android:layout_weight="1" 
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6px"/>
+    
+<Button
+        android:id="@+id/msg"
+        android:text="Send Message"
+        android:layout_marginLeft="10px"
+        android:layout_width="0px"
+         android:layout_weight="1" 
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6px"/>
+</TableRow>
+</TableLayout>
+	<TableLayout
+  			xmlns:android="http://schemas.android.com/apk/res/android"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content">
+  			
+  			<TableRow>
+  			<TextView
+        android:text="Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35px"
+        android:layout_marginLeft="20px"/>
+        <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_marginTop="35px"
+             android:layout_marginLeft="20px"/>
+  			</TableRow>
+  			<TableRow>
+  			<TextView
+        android:text="Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+           android:layout_marginLeft="20px"
+          android:layout_marginTop="25px"/>
+        <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_marginTop="25px"
+             android:layout_marginLeft="20px"/>
+  			</TableRow>
+  			<TableRow>
+  			<TextView
+        android:text="Notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_marginTop="25px"
+             android:layout_marginLeft="20px"/>
+        <TextView
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_marginTop="25px"
+             android:layout_marginLeft="20px"/>
+  			</TableRow>
+  			<TableRow>
+  			<TextView
+        android:text="Tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_marginTop="25px"
+             android:layout_marginLeft="20px"/>
+        <TextView
+        android:id="@+id/tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_marginTop="25px"
+             android:layout_marginLeft="20px"/>
+  			</TableRow>
+  			</TableLayout>
+</LinearLayout>
+</RelativeLayout>
+</merge>

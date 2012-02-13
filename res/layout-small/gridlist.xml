@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/rl1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/homescreen">
+  <TextView
+		android:paddingLeft="50px"
+		android:textColor="#000000"
+		android:text="Contacts!!!"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+  <TableLayout
+  			xmlns:android="http://schemas.android.com/apk/res/android"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content">
+  			
+  	<TableRow>
+  		<TextView
+ android:layout_width="wrap_content"
+android:layout_height="wrap_content"/>
+  	<EditText
+  	android:paddingLeft="10px"
+   	android:layout_width="180px"
+ 	android:layout_height="40px"
+ 	android:id="@+id/esearch"
+ 	android:textColor="#000000"/>
+ 	<Button
+ 	android:layout_width="25px"
+ 	android:layout_height="30px"
+ 	android:id="@+id/search"
+ 	android:background="@drawable/search"/>
+ </TableRow>
+</TableLayout>    
+  <GridView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/GridView01"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+    android:padding="0dp"
+    android:verticalSpacing="0dp"
+    android:horizontalSpacing="10dp"
+    android:numColumns="1"
+    android:columnWidth="100dp"
+    android:stretchMode="columnWidth"
+    android:gravity="center">
+</GridView>
+</LinearLayout>
+ <Button android:layout_width="fill_parent" 
+ android:id="@+id/ok" 
+ android:paddingTop="5dp" 
+ android:layout_height="wrap_content" 
+ android:text="OK" 
+ android:layout_alignParentBottom="true">
+ </Button>
+ </RelativeLayout>
+ </merge>

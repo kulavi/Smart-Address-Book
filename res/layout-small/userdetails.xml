@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:layout_height="fill_parent" 
+    android:layout_width="wrap_content">
+        
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+      <TableLayout
+  			xmlns:android="http://schemas.android.com/apk/res/android"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"
+  			android:paddingLeft="7px"
+  			android:paddingTop="10px">
+  	  	<!--<TableRow>
+             <TextView  
+                android:text="Email id" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:textColor="#000000">
+                </TextView>
+                <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"/> 
+<EditText
+android:id="@+id/email"
+android:textColor="#000000"
+android:hint="Enter Email id"
+android:layout_height="wrap_content"
+android:layout_width="150px"/>
+                </TableRow>
+                --><TableRow>
+             <TextView  
+                android:text="Mobile No" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:textColor="#000000">
+                </TextView>
+                <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"/> 
+<EditText
+android:id="@+id/mobno"
+android:textColor="#000000"
+android:hint="Mobile no"
+android:layout_height="wrap_content"
+android:layout_width="150px"/>
+                </TableRow>
+        </TableLayout>
+         <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textColor="#000000"
+android:id="@+id/txt1"/> 
+</LinearLayout>
+<LinearLayout android:id="@+id/footer"
+ android:layout_width="wrap_content"
+    android:layout_height="55px" 
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true" 
+    android:gravity="center_vertical|center_horizontal"
+    
+    style="@android:style/ButtonBar">
+
+    <Button  android:id="@+id/ok"  
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Ok" />
+       <TextView
+android:layout_width="20px"
+android:layout_height="wrap_content"
+/> 
+<Button android:id="@+id/cancel1" 
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Cancel" />
+        </LinearLayout>
+   </RelativeLayout>

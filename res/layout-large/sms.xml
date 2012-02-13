@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:layout_height="fill_parent" 
+    android:layout_width="fill_parent"
+            android:background="@drawable/homescreen">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@id/footer">
+  
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+
+        
+                <TextView  
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:text="@string/phoneno_info"
+                android:textColor="#000000"/>
+                
+            <EditText
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:id="@+id/phonenumber"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:textColor="#000000"
+                android:editable="false">
+            </EditText>
+            
+            <TextView  
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:text="@string/message_info"
+                android:textColor="#000000"/>
+                
+            <EditText
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:id="@+id/message"
+                android:lines="5"
+                android:gravity="top"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine|textCapSentences"
+                android:textColor="#000000">
+            </EditText>
+            
+        <CheckBox
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:text="@string/send_binarysms"
+                android:checked="false"
+                android:id="@+id/binary">
+            </CheckBox>
+    
+        
+       
+
+    </LinearLayout>
+        
+</ScrollView>
+<LinearLayout android:id="@+id/footer"
+ android:layout_width="wrap_content"
+    android:layout_height="55px" 
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true" 
+    style="@android:style/ButtonBar"
+    android:gravity="center_vertical|center_horizontal">
+
+    <Button  android:id="@+id/send"  
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Send" />
+       <TextView
+android:layout_width="20px"
+android:layout_height="wrap_content"
+/> 
+<Button android:id="@+id/cancel" 
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Done" />
+        </LinearLayout>
+   </RelativeLayout>

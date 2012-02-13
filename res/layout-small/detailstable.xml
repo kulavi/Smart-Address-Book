@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:layout_height="fill_parent" 
+    android:layout_width="fill_parent">
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        	android:id="@+id/ScrollView01" 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent">
+        	
+ <LinearLayout android:id="@+id/LinearLayout01"
+ 			android:layout_width="fill_parent"
+ 			android:layout_height="fill_parent"
+ 			android:orientation="vertical"
+ 			android:background="@drawable/homescreen"
+ 		 xmlns:android="http://schemas.android.com/apk/res/android">
+ 		  
+     
+ <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			  android:layout_width="fill_parent"
+    			  android:layout_height="fill_parent"
+    			  android:id="@+id/table">
+    			  
+   </TableLayout>
+   </LinearLayout>
+   </ScrollView>
+   <LinearLayout android:id="@+id/footer"
+ android:layout_width="wrap_content"
+    android:layout_height="55px" 
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true" 
+    android:gravity="center_vertical|center_horizontal"
+    style="@android:style/ButtonBar">
+
+ <Button android:id="@+id/task" 
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Task" />
+         <TextView
+android:layout_width="20px"
+android:layout_height="wrap_content"
+/> 
+        <Button  android:id="@+id/notes"  
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Notes" />
+        </LinearLayout>
+        </RelativeLayout>

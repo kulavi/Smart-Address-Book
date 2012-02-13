@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        	android:id="@+id/ScrollView01" 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent">
+        	
+ <LinearLayout android:id="@+id/LinearLayout01"
+ 			android:layout_width="fill_parent"
+ 			android:layout_height="fill_parent"
+ 			android:orientation="vertical"
+ 			android:background="@drawable/homescreen"
+ xmlns:android="http://schemas.android.com/apk/res/android">
+  <TextView
+    android:paddingLeft="75px"
+     android:paddingTop="15px"                
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"          
+android:textColor="#000000"
+ android:textStyle="italic"
+  android:id="@+id/txtname"/>
+    
+ <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			  android:layout_width="fill_parent"
+    			  android:layout_height="fill_parent">
+    			  <TableRow>
+   <ImageView
+       android:paddingLeft="70px"
+     android:id="@+id/gimg2"
+     android:layout_width="120px"
+     android:layout_height="100px"
+   	android:src="@drawable/propic" />
+ </TableRow>
+
+  <TableRow>
+    
+    </TableRow>
+    <TextView
+       android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+    <TableRow>
+  <TextView
+android:layout_width="60px"
+android:layout_height="wrap_content"
+android:text="First Name"
+android:textColor="#000000"/>
+<TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:id="@+id/dfname"
+  android:textColor="#000000"/>
+ </TableRow>
+ <TextView
+       	android:layout_width="wrap_content"
+		android:layout_height="10px"
+       />
+<TableRow>
+ <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Last Name"
+android:textColor="#000000"/>
+<TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:id="@+id/dlname"
+ android:textColor="#000000"
+  />
+</TableRow>
+<TextView
+       	android:layout_width="wrap_content"
+		android:layout_height="10px"
+       />
+<TableRow>
+ <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Mobile No"
+android:textColor="#000000"/>
+ <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:id="@+id/dmno"
+ android:textColor="#000000"
+ />
+ <TextView
+    android:layout_width="40px"
+    android:layout_height="10px"/>
+ <Button
+ android:id="@+id/bcall"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:background="@drawable/call1"/>
+  </TableRow>
+  <TextView
+       	android:layout_width="wrap_content"
+		android:layout_height="10px"
+       />
+  <TableRow>
+ <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Moblie Home"
+android:textColor="#000000"/>
+ <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:id="@+id/dhmno"
+ android:textColor="#000000"
+ />
+ <TextView
+    android:layout_width="40px"
+    android:layout_height="10px"/>
+ <Button
+ android:id="@+id/bhcall"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:background="@drawable/call1"/>
+  </TableRow>
+  <TextView
+       	android:layout_width="wrap_content"
+		android:layout_height="10px"
+       />
+
+ <TableRow>
+ <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Work Mobile"
+android:textColor="#000000"/>
+ <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:id="@+id/dwmno"
+ android:textColor="#000000"
+ />
+ <TextView
+    android:layout_width="40px"
+    android:layout_height="10px"/>
+ <Button
+ android:id="@+id/bwcall"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:background="@drawable/call1"/>
+  </TableRow>
+  <TextView
+       	android:layout_width="wrap_content"
+		android:layout_height="10px"
+       />
+  <TableRow>
+ <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Other Mobile"
+android:textColor="#000000"/>
+ <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:id="@+id/domno"
+ android:textColor="#000000"
+ />
+ <TextView
+    android:layout_width="40px"
+    android:layout_height="10px"/>
+ <Button
+ android:id="@+id/bocall"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:background="@drawable/call1"/>
+  </TableRow>
+  <TextView
+       	android:layout_width="wrap_content"
+		android:layout_height="10px"
+       />
+  <TableRow>
+ 
+  <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+android:textColor="#000000"
+ android:text="Email Id"/>
+  <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:id="@+id/demail"
+ android:textColor="#000000"
+ android:paddingLeft="25px"/>
+</TableRow>
+<TextView
+       	android:layout_width="wrap_content"
+		android:layout_height="10px"
+       />
+<TableRow>
+ <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Tags"
+android:textColor="#000000"/>
+<TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:id="@+id/dtags"
+ android:textColor="#000000"/>
+</TableRow>
+<TextView
+       	android:layout_width="wrap_content"
+		android:layout_height="10px"
+       />
+<TableRow>
+<TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+android:textColor="#000000"
+ android:text="Birthday"/>
+   <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:id="@+id/dbday"
+ android:textColor="#000000"/>
+ </TableRow>
+ <TextView
+       	android:layout_width="wrap_content"
+		android:layout_height="10px"
+       />
+ <TableRow>
+       <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:textColor="#000000"
+ android:text="Organization"/>
+  <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:id="@+id/dorg"
+ android:textColor="#000000"/>
+ </TableRow>
+ <TextView
+       	android:layout_width="wrap_content"
+		android:layout_height="10px"
+       />
+ <TableRow>
+       <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:textColor="#000000"
+ android:text="Tasks"/>
+  <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:id="@+id/dtask"
+ android:textColor="#000000"/>
+ </TableRow>
+ <TextView
+       	android:layout_width="wrap_content"
+		android:layout_height="10px"
+       />
+ <TableRow>
+       <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:textColor="#000000"
+ android:text="Description"/>
+  <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:id="@+id/ddescp"
+ android:textColor="#000000"/>
+ </TableRow>
+ <TextView
+       	android:layout_width="wrap_content"
+		android:layout_height="10px"
+       />
+ <TableRow>
+       <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:textColor="#000000"
+ android:text="Notes"/>
+  <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:id="@+id/dnotes"
+ android:textColor="#000000"/>
+ </TableRow>
+</TableLayout>
+</LinearLayout>
+</ScrollView>

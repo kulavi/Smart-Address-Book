@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:layout_height="fill_parent" 
+    android:layout_width="wrap_content">
+<LinearLayout android:id="@+id/LinearLayout01"
+ android:layout_width="fill_parent"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"
+ android:background="@drawable/homescreen"
+ xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="7px"
+    android:paddingTop="25px">
+    <TableRow>
+  
+       <TextView
+					android:id="@+id/t1" 
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:textColor="#000000"
+					android:text="Email id " 
+					/>
+				<EditText 
+					android:layout_height="wrap_content" 
+					android:id="@+id/email" 
+					android:hint="email id"
+					android:inputType="textCapWords"
+					android:layout_width="175px" 
+					/>
+ 	</TableRow>
+ 	<TextView  
+    				android:layout_width="fill_parent" 
+    				android:layout_height="10px"
+    				/>
+ 	 <TableRow>
+   <TextView
+					android:id="@+id/t1" 
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:textColor="#000000"
+					android:text="Password" 
+					/>
+					
+				<EditText 
+					android:layout_height="wrap_content" 
+					android:id="@+id/pwd" 
+					android:hint="password"
+				    android:password="true"
+					android:layout_width="175px" 
+					/>
+ 	</TableRow>
+ 	</TableLayout>
+ 	</LinearLayout>
+ 	<LinearLayout android:id="@+id/footer"
+ android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true" 
+     android:gravity="center_vertical|center_horizontal"
+    style="@android:style/ButtonBar">
+
+    <Button  android:id="@+id/done"  
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Save" />
+       <TextView
+android:layout_width="20px"
+android:layout_height="wrap_content"
+/> 
+<Button android:id="@+id/cancel" 
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Cancel" />
+</LinearLayout>
+ 	</RelativeLayout>

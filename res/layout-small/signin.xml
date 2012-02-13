@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:layout_height="fill_parent" 
+    android:layout_width="wrap_content">
+      <LinearLayout 
+      xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/homescreen">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20px"
+    android:paddingLeft="7px">
+
+    <TableRow>
+       <TextView  
+       android:id="@+id/TextView01"
+       android:paddingLeft="5px"
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content"
+       android:text="User Name" 
+       android:textColor="#000000"/>
+       
+        <EditText  
+       android:id="@+id/uname"
+       android:layout_width="150px" 
+       android:layout_height="wrap_content"
+       android:hint="Email Id of gmail"/>
+       
+       </TableRow>
+       <TableRow>
+       <TextView  
+       android:id="@+id/TextView01"
+       android:paddingLeft="5px"
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content"
+       android:text="Password" 
+       android:textColor="#000000"
+       />
+       
+         <EditText  
+       android:id="@+id/pass"
+       android:layout_width="150px" 
+       android:layout_height="wrap_content"
+       android:password="true"
+       android:hint="PassWord"/>
+       </TableRow>
+       <TableRow>
+       <TextView  
+       android:id="@+id/TextView01"
+       android:paddingLeft="5px"
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content"
+       android:text="Mobile No" 
+       android:textColor="#000000"
+       />
+       
+         <EditText  
+       android:id="@+id/mobnum"
+       android:layout_width="150px" 
+       android:layout_height="wrap_content"
+       android:hint="Mobile No"/>
+       </TableRow>
+       </TableLayout>
+       <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:id="@+id/txt1"
+android:textColor="#000000"
+android:paddingLeft="15px"/> 
+        </LinearLayout>
+       <LinearLayout android:id="@+id/footer"
+ android:layout_width="wrap_content"
+    android:layout_height="55px" 
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true" 
+    style="@android:style/ButtonBar">
+
+    <Button  android:id="@+id/bsign"  
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Sign In" />
+       <TextView
+android:layout_width="20px"
+android:layout_height="wrap_content"
+/> 
+<Button android:id="@+id/bcancel" 
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Cancel" />
+        </LinearLayout>
+   </RelativeLayout>
+       

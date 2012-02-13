@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:layout_height="fill_parent" 
+    android:layout_width="fill_parent"
+    android:background="@drawable/homescreen">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01" 
+        android:layout_above="@id/footer"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+<LinearLayout android:id="@+id/LinearLayout01"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ android:orientation="vertical"
+ 
+ xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+      <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="To"
+android:layout_marginLeft="15px"
+android:textColor="#000000"/>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"/>
+    <EditText 
+    android:layout_marginLeft="10px"
+    android:layout_width="440px" 
+    android:layout_height="70px"
+    android:id="@+id/to"
+    android:textColor="#000000"
+    /> 
+    
+      <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Subject"
+android:layout_marginLeft="15px"
+android:textColor="#000000"/>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"/>
+    <EditText 
+    android:layout_width="440px" 
+    android:layout_height="70px" 
+    android:id="@+id/subject"
+    android:layout_marginLeft="10px"
+    android:textColor="#000000"
+    /> 
+    
+      <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Message"
+android:layout_marginLeft="15px"
+android:textColor="#000000"/>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"/>
+    <EditText
+    android:id="@+id/body" 
+    android:layout_width="440px" 
+    android:inputType="textMultiLine"
+    android:lines="8" 
+    android:minLines="6" 
+    android:gravity="top|left" 
+    android:maxLines="10" 
+    android:layout_height="350px" 
+    android:scrollbars="vertical"  
+    android:textColor="#000000"
+    android:layout_marginLeft="10px"
+    />
+    
+</LinearLayout>
+</ScrollView>
+<LinearLayout android:id="@+id/footer"
+ android:layout_width="fill_parent"
+    android:layout_height="55px" 
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true" 
+    android:gravity="center_vertical|center_horizontal"
+    
+    style="@android:style/ButtonBar">
+
+    <Button  android:id="@+id/send"  
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Send" />
+       <TextView
+android:layout_width="20px"
+android:layout_height="wrap_content"
+/> 
+<Button android:id="@+id/cancel" 
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Cancel" />
+        </LinearLayout>
+   </RelativeLayout>

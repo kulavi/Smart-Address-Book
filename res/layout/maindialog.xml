@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+      <RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:layout_height="fill_parent" 
+    android:layout_width="fill_parent"
+      android:background="@drawable/homescreen">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01" 
+        android:layout_above="@id/footer"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="35px">
+    <TableRow>  
+      <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="List Name"
+android:textColor="#000000"
+android:paddingLeft="7px"/>
+<EditText
+android:layout_width="160px"
+android:layout_height="wrap_content"
+android:id="@+id/name"
+android:layout_marginLeft="14px"
+android:inputType="textCapWords"
+android:textColor="#000000"/>
+
+       </TableRow>
+       </TableLayout>
+         <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TableRow
+     android:paddingTop="6px">
+         <Button android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick date"
+        android:paddingLeft="7px"/>
+         <EditText android:id="@+id/edate"
+        android:layout_width="160px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7px"/>
+  </TableRow>
+         <TableRow
+          android:paddingTop="6px">
+         <Button android:id="@+id/Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick time"
+        android:paddingLeft="7px"/>
+         <EditText android:id="@+id/etime"
+        android:layout_width="160px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7px"/>
+   
+        </TableRow>
+        </TableLayout>
+         </LinearLayout>
+        </ScrollView>
+       <LinearLayout android:id="@+id/footer"
+ android:layout_width="wrap_content"
+    android:layout_height="55px" 
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:gravity="center_vertical|center_horizontal"
+       style="@android:style/ButtonBar">
+
+    <Button  android:id="@+id/ok"  
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="OK" />
+       <TextView
+android:layout_width="20px"
+android:layout_height="wrap_content"/> 
+<Button android:id="@+id/cancel" 
+    android:layout_width="wrap_content"
+        android:layout_height="55px"
+         android:layout_weight="1"
+        android:text="Cancel" />
+        </LinearLayout>
+   </RelativeLayout>
